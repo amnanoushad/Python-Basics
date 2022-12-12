@@ -1,0 +1,25 @@
+import random
+x=int(input("Enter starting of range: "))
+y=int(input("Enter ending of range: "))
+print("A random number number from range is:",end=" ")
+num1=random.randrange(x,y)
+print(num1)
+if num1%2==0:
+    print(num1,"is even")
+else:
+    print(num1,"is odd")
+if num1>=0:
+        print(num1,"is positive")
+else:
+    print(num1,"is negative number")
+if num1 > 1:
+    for i in range(2, int(num1/2)+1):
+        if (num1 % i) == 0:
+            print(num1, "is a composite number")
+            break
+    else:
+        print(num1, "is a prime number")
+elif num1<0:
+    print(num1,"is neither prime nor composite")
+else:
+    print(num1, "is a composite number")
