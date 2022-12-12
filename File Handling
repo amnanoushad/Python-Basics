@@ -1,0 +1,9 @@
+fin = open('InputData3.txt' , 'r')
+charCount = wordCount = lineCount = 0	
+for line in fin:			
+  lineCount += 1			
+  wordCount += len(line.split())	
+  charCount += len(line)			
+print("Line count = ", lineCount)		
+print("Word count = ", wordCount)
+print("Char count = ", charCount)
